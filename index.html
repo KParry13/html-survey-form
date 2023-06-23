@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h1 id="title">Survey Form</h1>
+    <p id="description">Please fill out the survey so we can have your feedback.</p>
+    <form id="survey-form">
+      <fieldset>
+        <label id="name-label">Enter Your Name: <input id="name" type="text" placeholder="Joan Smith" required/></label>
+        <label id="email-label">Enter Your Email: <input id="email" type="email" placeholder="youremail@domain.com" required/></label>
+        <label id="number-label">Enter A Number From 1 to 10: <input id="number" type="number" min="1" max="10" placeholder="0"/></label>
+      </fieldset>
+      <fieldset>
+        <label>How did you hear about us?
+          <select id="dropdown"> 
+            <option value="">(Select One)</option> 
+            <option value="1">(Social Media)</option> 
+            <option value="2">(Billboards)</option> 
+          </select>
+        </label>
+      </fieldset>
+      <fieldset>
+        <label><input  type="radio" value="male" name="account-type" class="inline"/>Male</label>
+        <label><input  type="radio" value="female" name="account-type" class="inline"/>Female</label>
+      </fieldset>
+      <fieldset>
+        <label>Check your most attractive box</label>
+        <label><input type="checkbox" value="box 1"/>Box 1</label>
+        <label><input type="checkbox" value="box 2"/>Box 2</label>
+        <label><input type="checkbox" value="box 2"/>Box 3</label>
+      </fieldset>
+      <fieldset>
+        <label>Comments or Concerns <textarea placeholder="Let us know what your thoughts are..."></textarea></label>
+      </fieldset>
+      <input id="submit" type="submit" value="Submit"/>
+    </form>
+  </body>
+</html>
